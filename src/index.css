@@ -1,0 +1,55 @@
+body {
+    font: 20px Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    background: rgb(245, 245, 245);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+canvas {
+    background: rgb(255, 255, 255);
+    margin: 10px;
+}
+
+input {
+    margin: 5px
+}
+
+.container {
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    font: "Trebuchet MS", sans-serif;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+    align-items: flex-start;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+button {
+    font: inherit;
+}
+
+hr {
+    margin: 0px;
+    height: 1px;
+    width: 95%;
+    background: rgb(192, 192, 192);
+}
+
+.no_italics {
+    font-style: normal !important;
+}
