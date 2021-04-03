@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/auto-turtle/static/css/main.8cd93d8c.chunk.css",
-    "main.js": "/auto-turtle/static/js/main.dbcdd37e.chunk.js",
-    "main.js.map": "/auto-turtle/static/js/main.dbcdd37e.chunk.js.map",
+    "main.css": "/auto-turtle/static/css/main.eb7b67da.chunk.css",
+    "main.js": "/auto-turtle/static/js/main.93bab8b2.chunk.js",
+    "main.js.map": "/auto-turtle/static/js/main.93bab8b2.chunk.js.map",
     "runtime-main.js": "/auto-turtle/static/js/runtime-main.0294c2bd.js",
     "runtime-main.js.map": "/auto-turtle/static/js/runtime-main.0294c2bd.js.map",
     "static/js/2.788fed4a.chunk.js": "/auto-turtle/static/js/2.788fed4a.chunk.js",
     "static/js/2.788fed4a.chunk.js.map": "/auto-turtle/static/js/2.788fed4a.chunk.js.map",
     "index.html": "/auto-turtle/index.html",
-    "static/css/main.8cd93d8c.chunk.css.map": "/auto-turtle/static/css/main.8cd93d8c.chunk.css.map",
+    "static/css/main.eb7b67da.chunk.css.map": "/auto-turtle/static/css/main.eb7b67da.chunk.css.map",
     "static/js/2.788fed4a.chunk.js.LICENSE.txt": "/auto-turtle/static/js/2.788fed4a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0294c2bd.js",
     "static/js/2.788fed4a.chunk.js",
-    "static/css/main.8cd93d8c.chunk.css",
-    "static/js/main.dbcdd37e.chunk.js"
+    "static/css/main.eb7b67da.chunk.css",
+    "static/js/main.93bab8b2.chunk.js"
   ]
 }
