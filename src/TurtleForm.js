@@ -1,16 +1,18 @@
 import React from "react"
 import Checkbox from "./Checkbox"
 
-const OPTIONS_CHECK = []//["Increase", "Start from end"]
-//const OPTIONS_NUMBER = ["Repetitions"]
+const OPTIONS = ["Increase", "Start from end"]
 
+/**
+ * Renders and updates the HTML form for the turtle options.
+ */
 class TurtleForm extends React.Component {
     constructor(props) {
         super(props)
         
         this.state = {
             // transforms ["option1, option2"] to ["option1": false, "option2": false]
-            checkboxes: OPTIONS_CHECK.reduce(
+            checkboxes: OPTIONS.reduce(
                 (options, option) => ({
                     ...options,
                     [option]: false
@@ -20,6 +22,11 @@ class TurtleForm extends React.Component {
         }
     }
 
+    /**
+     * Creates a checkbox for the specified label.
+     * @param {String} option - The text label for the checkbox.
+     * @returns The rendered checkbox.
+     */
     createCheckbox(option) {
         return (
             <Checkbox 
@@ -31,10 +38,14 @@ class TurtleForm extends React.Component {
         )
     }
 
+    /**
+     * Updates the clicked checkbox.
+     * @param {React.ChangeEvent} changeEvent
+     */
     handleCheckboxChange(changeEvent) {
         const { name } = changeEvent.target
 
-        // changes the state of the clicked checkbox while preserving the others
+        // changes the state of the clicked checkbox (to checked or unchecked) while preserving the others' states
         this.setState(prevState => ({
             checkboxes: {
                 ...prevState.checkboxes,
@@ -43,22 +54,13 @@ class TurtleForm extends React.Component {
         }))
     }
 
+    /**
+     * Creates a checkbox for each option.
+     * @returns The rendered checkboxes.
+     */
     createForm() {
-        return OPTIONS_CHECK.map(option => this.createCheckbox(option))
+        return OPTIONS.map(option => this.createCheckbox(option))
     }
-
-    // handleFormSubmit(formSubmitEvent) {
-    //     formSubmitEvent.preventDefault()
-
-    //     // gets the names of the checkboxes
-    //     Object.keys(this.state.checkboxes)
-    //         // checks if they are checked
-    //         .filter(checkbox => this.state.checkboxes[checkbox])
-    //         // prints the checked ones
-    //         .forEach(checkbox => {
-    //             console.log(checkbox + " is selected")
-    //         })
-    // }
 
     render() {
         return (

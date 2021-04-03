@@ -1,16 +1,13 @@
 import React from "react"
 
+/**
+ * The header for the app.
+ */
 class Header extends React.Component {
-    constructor(props) {
-        super(props)
-
-
-    }
-
     render() {
         return (
             <div class="header">
-                <span>Auto-Turtle </span>
+                <span>Auto-Turtle </span><span class="no_italics">🐢</span>
             </div>
         )
     }
